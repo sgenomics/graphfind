@@ -1,0 +1,16 @@
+.PHONY: all
+
+all: pi_graph_finder_climber_mpi pi_graph_finder_bruteforce_mpi mpiboosttest calculate_fitness
+
+pi_graph_finder_bruteforce_mpi: graph_fitness_square.h ../graph/graph.h pi_graph_finder_bruteforce_mpi.cpp
+	mpiCC pi_graph_finder_bruteforce_mpi.cpp  -L/usr/local/lib -g -lboost_mpi-gcc41-mt-d-1_35 -lboost_serialization-gcc41-d-1_35 -o pi_graph_finder_bruteforce_mpi
+
+pi_graph_finder_climber_mpi: graph_fitness_square.h ../graph/graph.h pi_graph_finder_climber_mpi.cpp
+	mpiCC pi_graph_finder_climber_mpi.cpp  -L/usr/local/lib -g -lboost_mpi-gcc41-mt-d-1_35 -lboost_serialization-gcc41-d-1_35 -o pi_graph_finder_climber_mpi
+
+calculate_fitness: graph_fitness_square.h ../graph/graph.h calculate_fitness.cpp
+	mpiCC calculate_fitness.cpp  -L/usr/local/lib -g -lboost_serialization-gcc41-d-1_35 -o calculate_fitness 
+
+mpiboosttest: mpiboosttest.cpp
+	mpiCC mpiboosttest.cpp  -L/usr/local/lib -g -lboost_mpi-gcc41-mt-d-1_35 -lboost_serialization-gcc41-d-1_35 -o mpiboosttest
+

@@ -1,0 +1,70 @@
+9
+
+dir
+64
+file:///home/new/svn-repos/code/graph
+file:///home/new/svn-repos/code
+
+
+
+2007-10-27T20:32:51.140346Z
+2
+new
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dd0af01d-149e-4901-af2f-bc70ade6c2fb
+
+test
+dir
+
+graph_iterator.h
+file
+
+
+
+
+2007-12-21T13:05:27.000000Z
+41fc77cc9abd3eda10df971bfa3edc1b
+2007-10-27T20:32:51.140346Z
+2
+new
+has-props
+
+graph.h
+file
+
+
+
+
+2007-12-21T13:05:27.000000Z
+69191e2373a434a7ff70db652955c62f
+2007-10-27T20:32:51.140346Z
+2
+new
+has-props
+
+.graph.h.swp
+file
+
+
+
+
+2007-12-21T13:05:27.000000Z
+ddae4e5dbbe326ddb2d0b7f985ce3a31
+2007-10-27T20:32:51.140346Z
+2
+new
+has-props
+
